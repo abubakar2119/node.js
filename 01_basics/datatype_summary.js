@@ -34,4 +34,24 @@ const myfunction=function(){
 }
 console.log( typeof heros);
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
+//stack(primittive) ;  heap(non primittive)
+
+let mycollegename="ilm college"
+let anothercollegename="mycollegename"
+anothercollegename="aspire colege kasur"
+console.log(anothercollegename);
+console.log(mycollegename);
+
+let userone ={
+    email: "abubakar@gmail.com",
+    jazzcash:"jazzcash.com"
+
+
+}
+let usertwo=userone
+usertwo.email="talha@google.com"
+
+console.log(userone.email);
+console.log(usertwo.email);
