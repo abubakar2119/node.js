@@ -52,3 +52,31 @@ user[1].email
 console.log(tinderuser.hasOwnProperty('name'));
 
 
+const course={
+    email:"abubakar@gmail.com",
+    name:"abubakar",
+    price:"999",
+    courseinstaractor:"hitesh sir"
+
+
+}
+// console.log(course);
+
+
+// course.courseinstaractor    
+const {courseinstaractor:instaractor } = course
+console.log(instaractor);
+
+{
+    "name":"abubakar",
+    "course":"js in hindi",
+    "price":"8978"
+
+}
+
+[
+    {},
+    {},
+    {},
+
+]
