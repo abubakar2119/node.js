@@ -8,16 +8,22 @@
 // }
 
 
-const grade = 'c';
+const grade = 'b';
 
 switch (grade) {
     case 'a':
-        console.log("You did great");
+        console.log("pass");
         break;
     case 'b':
-        console.log("You did good");
+        console.log(" fail");
         break;
     case 'c':
-        console.log("You did okay");
+        console.log("false");
         break;
+        case 'd':
+        console.log("true");
+        break;
+    default:
+        console.log("not a valid grade");
+        break;  
 }
