@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="three.css">
+    <title>html Events</title>
+</head>
+<body>
+    <h2>Amazing Image</h2>
+    <div id ="class">
+        
+    <img width="200px" id="chatgpt" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+        alt="Nature" >
+        <br>
+   <img width="200px" id="google" src=https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_640.jpg
+   alt="Nature" >
+     <br>
+   <img width="200px" id="linkedin" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrnoeCDSTNv_vdY7dQ3yRL9g0bGCq9ZsTFWUiki63hrQ&s
+   alt="Nature" >
+     <br>
+   <img width="200px" height="133px" id="chrome" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwO0wY2zmLQ-AFOwPUfj_GWNfC4AVxIUeIKEocoo0a9g&s=10
+   alt="Nature" >
+     <br>
+   <img width="200px" id="photoshop" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn4xYjeNR3q2Qau3h5OWaSm-YPkJ04rycwkUG-g9dwGA&s=10
+   alt="Nature" >
+   <br>
+   <a href="https://www.google.com/"id="google">Google</a>
+</div>
+</body>
+<script>
+     // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+     // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+    
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+   
+    
+    document.querySelector('#class').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>

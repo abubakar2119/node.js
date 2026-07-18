@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai or javascript</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+    
+</body>
+<script>
+const date=function()  {
+    console.log("abubakar",Date.now());
+    
+};
+let time = setInterval(date,1000)
+
+
+document.querySelector('#stop').
+addEventListener('click',function(){
+clearInterval(time)
+console.log("stopped");
+
+})
+document.querySelector('#start').
+addEventListener('click',
+ function () {
+  time=setInterval(date,1000)
+    console.log("started");
+});
+
+
+
+</script>
+</html>
